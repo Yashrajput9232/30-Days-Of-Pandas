@@ -1,4 +1,4 @@
-# 30 Days of Pandas - LeetCode Solutions
+# 30 Days of Pandas - [LeetCode](https://leetcode.com/studyplan/30-days-of-pandas/) Solutions
 
 Welcome to my **30 Days of Pandas** challenge solutions repository! This challenge is designed to enhance your data manipulation and analysis skills using the **Pandas** library in Python. Each day covers a new concept or exercise, helping you to dive deep into **Pandas** functionality.
 
