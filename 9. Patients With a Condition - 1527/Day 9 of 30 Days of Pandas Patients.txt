@@ -1,0 +1,18 @@
+Day 9 of 30 Days of Pandas: Patients With a Condition: #1527
+
+📝 Problem Description: We are given a table Patients containing the patient ID, name, and their medical conditions. Each patient's conditions are represented as space-separated codes. Our task is to identify patients who have Type I Diabetes, where the condition code always starts with the DIAB1 prefix.
+
+The goal is to return the patient_id, patient_name, and conditions of the patients who have Type I Diabetes.
+
+📊 Approach Using Pandas:
+
+1. String Matching with Regular Expressions: Pandas' str.contains() function allows for advanced string filtering using regular expressions. We used the \b word boundary to ensure the correct identification of the DIAB1 prefix.
+
+2. Efficient Data Selection: Filtering based on specific patterns in a text column is a powerful feature of Pandas, allowing you to extract relevant data from large datasets efficiently.
+
+📊 Approach Using SQL:
+
+1. Regular Expressions in SQL: We used the "~" function to filter valid emails, ensuring the prefix starts with a letter and contains only valid characters, followed by the correct domain.
+
+To access the solutions for the "30 Days of Pandas" challenge, you can visit the repository at this link:
+https://github.com/Yashrajput9232/30-Days-Of-Pandas.git
