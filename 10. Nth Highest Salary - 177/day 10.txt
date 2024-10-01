@@ -1,0 +1,22 @@
+Day 10 of #30DaysOfPandas: Nth Highest Salary: #177
+
+📝 Problem Description:
+We are given an Employee table containing the id and salary of employees. The task is to find the Nth highest salary from the table. If the Nth highest salary doesn't exist, return null.
+
+The goal is to return the salary of the Nth highest-paid employee.
+
+📊 Approach Using Pandas:
+
+1. Handling Duplicate Salaries: We use drop_duplicates() to eliminate duplicate salaries and sort the salary column in descending order.
+
+2. Efficient Data Retrieval: By applying iloc[], we can retrieve the Nth highest salary in constant time, ensuring efficient access even for large datasets.
+
+📊 Approach Using SQL:
+
+1. DENSE_RANK(): This function is used to assign consecutive ranks to employees' salaries in descending order. Employees with the same salary get the same rank.
+
+2. Common Table Expression (CTE): The WITH clause creates a temporary table (RankedEmployeeSalaries) to rank the salaries. This makes the query cleaner and easier to manage.
+
+3. Filtering by Rank: The outer query retrieves the salary that matches the Nth rank.
+
+To access the solutions for the "30 Days of Pandas" challenge, you can visit the repository at this link:
