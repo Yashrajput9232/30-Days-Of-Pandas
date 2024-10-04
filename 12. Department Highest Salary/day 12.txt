@@ -1,0 +1,24 @@
+Day 12 of 30 Days Of Pandas: Nth Highest Salary: #184
+
+📝 Problem Description:
+We are given two tables: Employee and Department. The Employee table holds the employees' details such as id, name, salary, and the corresponding departmentId, while the Department table stores the department id and name.
+
+The task is to find the employee(s) with the highest salary in each department.
+
+📊 Approach Using Pandas:
+
+1. Merge the Employee and Department tables.
+
+2. Group the merged data by department and find the highest salary in each department.
+
+3. Filter the rows where the salary matches the maximum salary in each department.
+
+📊 Approach Using SQL:
+
+1. Joining the Employee and Department tables.
+
+2. Using a subquery to find the maximum salary per department.
+
+3. Filtering employees who have the maximum salary in their respective departments.
+
+To access the solutions for the "30 Days of Pandas" challenge, you can visit the repository at this link:https://github.com/Yashrajput9232/30-Days-Of-Pandas.git
