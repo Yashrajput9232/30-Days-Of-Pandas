@@ -1,0 +1,28 @@
+Day 17 of 30 Days Of Pandas: Find Total Time Spent by Each Employee: #1741
+
+📝 Problem Description:
+
+We are given a table Employees with the following columns:
+
+emp_id: Employee ID
+event_day: The day the event occurred
+in_time: The minute the employee entered the office
+out_time: The minute the employee left the office
+
+📊 Approach Using Pandas:
+
+1. Group the data by emp_id and event_day.
+
+2. For each group, calculate the time spent as out_time - in_time.
+
+3. Sum up the time spent for each emp_id and event_day combination.
+
+📊 Approach Using SQL:
+
+1. SELECT: We select event_day (renaming it as day), emp_id, and the total time spent. The total time is calculated as the difference between out_time and in_time for each entry.
+
+2. SUM: The total time for each employee on a given day is calculated by summing the difference between out_time and in_time.
+
+3. GROUP BY: We group the results by event_day and emp_id so that the total time is calculated for each employee on each day.
+
+To access the solutions for the "30 Days of Pandas" challenge, you can visit the repository at this link:https://github.com/Yashrajput9232/30-Days-Of-Pandas.git
