@@ -1,0 +1,27 @@
+Day 18 of 30 Days Of Pandas: Find First Login Date for Each Player: #511
+
+📝 Problem Description:
+
+We are given a table Activity with the following columns:
+
+- player_id: The ID of the player
+- device_id: The ID of the device used by the player
+- event_date: The date the player logged in and played games
+- games_played: The number of games played by the player during the session
+
+We need to find the first login date for each player.
+
+📊 Approach Using Pandas:
+
+1. Group by player_id: This allows us to get all the activity records for each player.
+   
+2. Find the minimum event_date: For each group (player), calculate the first login date by identifying the earliest date using .min() on the event_date column.
+
+📊 Approach Using SQL:
+
+1. SELECT: We select the player_id and the minimum event_date, renaming it as first_login.
+
+2. GROUP BY: The results are grouped by player_id, so we can get the first login date for each player.
+
+
+To access the solutions for the "30 Days of Pandas" challenge, you can visit https://github.com/Yashrajput9232/30-Days-Of-Pandas.git
