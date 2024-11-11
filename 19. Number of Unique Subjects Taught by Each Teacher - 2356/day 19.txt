@@ -1,0 +1,26 @@
+Day 19 of 30 Days Of Pandas: Number of Unique Subjects Taught by Each Teacher: #2356
+
+📝 Problem Description:
+
+We are given a table `Teacher` with the following columns:
+
+- `teacher_id`: The ID of the teacher.
+- `subject_id`: The ID of the subject being taught.
+- `dept_id`: The ID of the department in which the subject is taught.
+
+We need to find the number of unique subjects each teacher teaches, ignoring the department. Each teacher may teach the same subject in different departments, but we only count the subject once.
+
+📊 Approach Using Pandas:
+
+1. Drop duplicate records: Remove duplicates of `subject_id` for each teacher, as we only care about unique subjects taught, regardless of department.
+   
+2. Group by `teacher_id`: For each teacher, count the number of unique `subject_id` values using `.nunique()`.
+
+📊 Approach Using SQL:
+
+1. SELECT DISTINCT: We select distinct combinations of `teacher_id` and `subject_id` to remove any repetition of subjects in different departments.
+
+2. COUNT DISTINCT: We count the distinct `subject_id` for each `teacher_id` to determine the number of unique subjects.
+
+
+To access the solutions for the "30 Days of Pandas" challenge, you can visit the repository at this link: https://github.com/Yashrajput9232/30-Days-Of-Pandas.git
